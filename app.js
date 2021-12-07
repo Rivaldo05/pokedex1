@@ -13,11 +13,11 @@ const generatepokemonpromisses = () => Array(numPokemons).fill().map((_, index) 
     fetch(GetPokemonurl(index + 1)).then(Response => Response.json())
 )
 
-const generateHtml = pokemons => pokemons.reduce((accumulator, pokemon) => { // evita o uso do "pokemon."(accumulator, name, id, types)//src ="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${255}.png"/>
+const generateHtml = pokemons => pokemons.reduce((accumulator, pokemon) => { // evita o uso do "pokemon."(accumulator, name, id, types)src ="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokemon.id}.png"/>
         const types = pokemon.types.map(typeInfo => typeInfo.type.name)
         accumulator += `
         <li class="card ${types[0]}">
-        <img class="card-image" alt = "${pokemon.name}"src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${pokemon.id}.png"/> 
+        <img class="card-image" alt = "${pokemon.name}" src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"> 
             <h2 class = "card-title">${pokemon.id} - ${pokemon.name}</h2>
             <p class ="card-subtitle">${types.join(' | ')}</p>
         </li>
