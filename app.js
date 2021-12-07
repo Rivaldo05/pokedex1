@@ -19,10 +19,10 @@ const generateHtml = pokemons => pokemons.reduce((accumulator, pokemon) => { // 
         <li class="card ${types[0]}">
         <img class="card-image" alt = "${pokemon.name}" src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"> 
             <h2 class = "card-title">${pokemon.id} - ${pokemon.name}</h2>
-            <p class ="card-subtitle">${types.join(' | ')}</p>
+            <p class="card-subtitle">${types.join(' | ')}</p>
         </li>
         `
-
+        console.log();
         return accumulator
     }, '')
 

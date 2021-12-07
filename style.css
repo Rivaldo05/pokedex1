@@ -1,6 +1,6 @@
 body {
 	background: #EFEFBB;
-	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+	background: linear-gradient(to right, rgb(114, 230, 250), rgb(226, 168, 216));
 	color: white;
 	margin: 0;
 	font-family: rubik;
@@ -13,7 +13,7 @@ body {
 
 h1 {
 	text-align: center;
-	font-size: 54px;
+	font-size: 3em;
 }
 
 .pokedex {
@@ -115,6 +115,7 @@ h1 {
 	font-size: 32px;
 	font-weight: normal;
 	position: relative;
+    font-size: 2em;
 	z-index: 2;
 }
 
@@ -123,6 +124,7 @@ h1 {
 	color: #666;
 	font-weight: lighter;
 	position: relative;
+    font-size: 1.5em;
 	z-index: 2;
 }
 
