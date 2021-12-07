@@ -14,6 +14,7 @@ body {
 h1 {
 	text-align: center;
 	font-size: 3.5em;
+	margin: 0;
 }
 
 .pokedex {
