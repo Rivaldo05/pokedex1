@@ -19,6 +19,7 @@ h1 {
 
 .pokedex {
 	display: grid;
+	/*auto-fit diz ao navegador para lidar com o tamanho da coluna e a quebra de elemento para nós, de modo que os elementos sejam quebrados em linhas quando a largura não for grande o suficiente para ajustá-los sem qualquer estouro.*/
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	grid-gap: 20px;
 	padding-inline-start: 0;
