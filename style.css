@@ -4,6 +4,7 @@ body {
 	color: white;
 	margin: 0;
 	font-family: rubik;
+	box-sizing: border-box;
 }
 
 .container {
@@ -136,6 +137,23 @@ h1 {
 	z-index: 2;
 }
 
+.atklist{
+	background-color: rgba(170, 170, 170, .5);
+	padding: 0;
+	border-radius: 20px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+	list-style-type: none;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+}
+
+.atklist > li{
+	margin-bottom: 10px;
+}
 @keyframes bounce {
 	20% {
 			transform: translateY(-6px);
