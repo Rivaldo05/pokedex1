@@ -109,7 +109,7 @@ h1 {
 }
 
 .card:hover {
-	animation: bounce 0.5s linear;
+	animation: bounce 1s infinite linear;
 }
 
 .card-title {
@@ -156,14 +156,14 @@ h1 {
 }
 @keyframes bounce {
 	20% {
-			transform: translateY(-6px);
+			transform: translateY(-30px);
 	}
 	40% {
 			transform: translateY(0px);
 	}
 
 	80% {
-			transform: translateY(-2px);
+			transform: translateY(-30px);
 	}
 	100% {
 			transform: translateY(0);
